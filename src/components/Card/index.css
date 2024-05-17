@@ -1,0 +1,46 @@
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+    width: 300px;
+    background-color: #65616140;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Smooth transition for the background color change */
+}
+
+.card:hover {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.company-logo {
+    align-items:center;
+    width: 175px;
+    height: 130px;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.company-name {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.tagline {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.description {
+    margin-top: 10px;
+}

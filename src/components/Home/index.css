@@ -1,0 +1,380 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border-radius: 20px;
+  height: 70px;
+  margin-top:0px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+}
+
+.logo {
+  width: 200px;
+  height: 70px;
+  margin-top: 5px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-right: 30px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #4976c9; /* Change color on hover */
+}
+
+.company-cards {
+  margin-top:20px;
+  margin-left:20px;
+  display: grid;
+  padding:20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-row-gap: 30px;
+  grid-column-gap: auto;
+  margin-top:5px;
+  margin-left:27%;
+  
+}
+
+.body{
+  padding:10px;
+}
+
+.sidebar{
+  position: fixed;
+  flex: 25%;
+  background-color: #65616140;
+  padding: 20px;
+  border-radius:10px;
+  height:80vh;
+  width:22%;
+  margin-top:80px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+}
+
+.intro{
+  margin-top:90px;
+  margin-left:26%;
+  font-size:25px;
+  padding:20px;
+  background-color: #65616140;
+  border-radius:20px;
+  color:white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+  padding-left:12%;
+  padding-right:10%;
+}
+
+.highlighted-data{
+  margin-top:100px;
+  margin-left:26%;
+  padding:20px;
+  background-color: transparent;
+  border-radius:20px;
+  color:white;
+  font-size:20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+/* Add animations here */
+
+.home{
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size:cover;
+  margin:0px;
+  border-radius:10px;
+}
+
+.link{
+  color:white
+}
+
+.highlighted-card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    
+}
+
+.company-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.highcompany {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hightagline {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.category,
+.description,
+.products,
+.locations,
+.contact,
+.best-sellers,
+.platforms {
+    margin-bottom: 10px;
+}
+
+.best-sellers ul,
+.platforms ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.row{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin-top:20px;
+  
+}
+
+.compName{
+  color:white;
+}
+
+span:hover {
+    cursor: pointer;
+    color: #44ff00; /* Change color on hover */
+}
+
+.sidebar-filter{
+  margin-top:50px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    color: white; /* Change text color */
+    
+}
+
+/* Style when the select is focused */
+select:focus {
+    border-color: #000000; /* Change to your desired focus color */
+}
+
+/* Style when the select is hovered */
+select:hover {
+    color:black;
+    border-color: #000000; /* Change to your desired hover color */
+}
+
+.categoryHead{
+  text-align:left;
+}
+
+.noData{
+  height:600px;
+  width:750px;
+  border-radius:20px;
+  margin-left:50px;
+  margin-bottom:0px;
+}
+
+
+.gear-rotate{
+  width: 2em;
+  height: 2em;
+  top: 50%; 
+  left: 50%; 
+  margin-top: -1em;
+  margin-left: -1em;
+  background: #E9E581;
+  position: absolute;
+  border-radius: 1em;
+  -webkit-animation: 1s gear-rotate linear infinite;
+  -moz-animation: 1s gear-rotate linear infinite;
+  animation: 1s gear-rotate linear infinite;
+}
+#wrapper{
+    width: 100%;
+    max-width: 725px;
+    margin: 0px auto;
+}
+.gears{
+  margin-tpo:0px;
+}
+.gears:first-child{
+  margin-right: 3%;
+}
+.gears-container{
+    width:150px; 
+    height: 50px;
+    font-size:24px;
+    padding: 1%;
+    position: absolute; 
+    margin-top:135px;
+    margin-left:27%;
+}
+
+.gear-rotate{
+  width: 2em;
+  height: 2em;
+  top: 50%; 
+  left: 50%; 
+  margin-top: -1em;
+  margin-left: -1em;
+  background: #E9E581;
+  position: absolute;
+  border-radius: 1em;
+  -webkit-animation: 1s gear-rotate linear infinite;
+  -moz-animation: 1s gear-rotate linear infinite;
+  animation: 1s gear-rotate linear infinite;
+}
+.gear-rotate-left{
+  margin-top: -2.2em;
+  top: 50%;
+  width: 2em;
+  height: 2em;
+  background: #E9E581;
+  position: absolute;
+  border-radius: 1em;
+  -webkit-animation: 1s gear-rotate-left linear infinite;
+  -moz-animation: 1s gear-rotate-left linear infinite;
+  animation: 1s gear-rotate-left linear infinite;
+}
+
+.gear-rotate::before, .gear-rotate-left::before {
+  width: 2.8em;
+  height: 2.8em;
+  background: 
+    -webkit-linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
+    -webkit-linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
+    -webkit-linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
+  background: 
+    -moz-linear-gradient(0deg,transparent 39%,#E9E581 39%,#47EC19 61%, transparent 61%),
+    -moz-linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
+    -moz-linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
+  background: 
+    -o-linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
+    -o-linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
+    -o-linear-gradient(120deg,transparent 42%,#47EC19 42%,#E9E581 58%, transparent 58%);
+  background: -ms-linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),-ms-linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),-ms-linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
+  background: 
+      linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
+    linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
+    linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
+  position: absolute;
+  content:"";
+  top: -.4em;
+  left: -.4em;
+  border-radius:1.4em;
+}
+.gear-rotate::after, .gear-rotate-left::after {
+  width: 1em;
+  height: 1em;
+  background: #2B2B2B;
+  position: absolute;
+  content:"";
+  top: .5em;
+  left: .5em;
+  border-radius: .5em;
+}
+
+/*
+ * Keyframe Animations 
+ */ 
+
+@-webkit-keyframes gear-rotate {
+  0% { 
+    -webkit-transform: rotate(0deg);
+  }
+  100% { 
+    -webkit-transform: rotate(-180deg); 
+  }
+}
+
+@-moz-keyframes gear-rotate {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(-180deg); 
+  }
+}
+
+@keyframes gear-rotate {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(-180deg); 
+  }
+}
+
+@-webkit-keyframes gear-rotate-left {
+ 0% {
+   -webkit-transform: rotate(30deg); 
+  }
+  100% {
+    -webkit-transform: rotate(210deg);
+  }
+}
+
+@-moz-keyframes gear-rotate-left {
+ 0% { 
+   -webkit-transform: rotate(30deg); 
+  }
+  100% { 
+    -webkit-transform: rotate(210deg);
+  }
+}
+
+@keyframes gear-rotate-left {
+ 0% { 
+   -webkit-transform: rotate(30deg); 
+  }
+  100% { 
+    -webkit-transform: rotate(210deg);
+  }
+}

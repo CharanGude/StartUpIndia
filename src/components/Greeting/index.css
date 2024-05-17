@@ -1,0 +1,21 @@
+.greeting{
+  padding:10px;
+  background-color:#ffffff00;
+  color:white;
+  border-radius:20px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+}
+
+.user-image{
+  height:100px;
+  width : 100px;
+  border-radius:200px;
+}
+
+.username{
+  margin:0px;
+}
