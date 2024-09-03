@@ -15,7 +15,7 @@ function App() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(process.env.REACT_APP_BACKEND_SERVER+'/register', { name, email, password });
+            const response = await axios.post('https://startupindia.onrender.com/register', { name, email, password });
             console.log('Registration response:', response.data.message);
             setSuccess('Registration successful');
             setError('');

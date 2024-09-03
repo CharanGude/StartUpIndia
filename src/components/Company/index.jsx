@@ -24,7 +24,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        process.env.REACT_APP_BACKEND_SERVER+"/form",
+        'https://startupindia.onrender.com/form',
         { formData });
         console.log('Registration response:', response.data.message);
         setSuccess('Registration successful');

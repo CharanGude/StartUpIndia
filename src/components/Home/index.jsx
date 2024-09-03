@@ -33,7 +33,7 @@ const Home = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        process.env.REACT_APP_BACKEND_SERVER+"/data",
+        'https://startupindia.onrender.com/data',
         {
           headers: {
             Authorization: `Bearer ${Cookie.get("jwt_token")}`,
@@ -64,7 +64,7 @@ const Home = () => {
     } else {
       try {
         const response = await axios.post(
-          process.env.REACT_APP_BACKEND_SERVER+"/filter",
+          'https://startupindia.onrender.com/filter',
           { filter },
         );
         setData(response.data);

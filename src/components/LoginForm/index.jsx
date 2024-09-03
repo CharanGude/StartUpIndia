@@ -31,7 +31,7 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        process.env.REACT_APP_BACKEND_SERVER+"/login",
+        'https://startupindia.onrender.com/login',
         { email, password },
       );
       console.log("JWT token:", response.data.token);
