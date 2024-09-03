@@ -33,7 +33,7 @@ const Home = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://6872b76b-9d7f-49a9-a5c8-29e48320b1de-00-3rsc4zwtpt7fx.riker.replit.dev:3001/data",
+        process.env.REACT_APP_BACKEND_SERVER+"/data",
         {
           headers: {
             Authorization: `Bearer ${Cookie.get("jwt_token")}`,
@@ -64,7 +64,7 @@ const Home = () => {
     } else {
       try {
         const response = await axios.post(
-          "https://6872b76b-9d7f-49a9-a5c8-29e48320b1de-00-3rsc4zwtpt7fx.riker.replit.dev:3001/filter",
+          process.env.REACT_APP_BACKEND_SERVER+"/filter",
           { filter },
         );
         setData(response.data);

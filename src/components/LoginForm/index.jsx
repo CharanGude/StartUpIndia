@@ -3,7 +3,7 @@ import Cookie from "js-cookie";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
-import logo from '../../assets/logo.png';
+import logo from "../../assets/logo.png";
 
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://6872b76b-9d7f-49a9-a5c8-29e48320b1de-00-3rsc4zwtpt7fx.riker.replit.dev:3001/login",
+        process.env.REACT_APP_BACKEND_SERVER+"/login",
         { email, password },
       );
       console.log("JWT token:", response.data.token);

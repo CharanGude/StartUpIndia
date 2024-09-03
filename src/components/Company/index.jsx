@@ -24,7 +24,7 @@ function App() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://6872b76b-9d7f-49a9-a5c8-29e48320b1de-00-3rsc4zwtpt7fx.riker.replit.dev:3001/form",
+        process.env.REACT_APP_BACKEND_SERVER+"/form",
         { formData });
         console.log('Registration response:', response.data.message);
         setSuccess('Registration successful');
@@ -57,7 +57,7 @@ function App() {
     <div className="container">
       <img className="logo" src={logo} alt="logo" />
       <Link to="/" className="link"><button>Home</button></Link>
-      <h1>Submit Company Details:12</h1>
+      <h1>Submit Company Details:</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Name:</label>

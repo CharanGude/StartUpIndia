@@ -15,7 +15,7 @@ function App() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://6872b76b-9d7f-49a9-a5c8-29e48320b1de-00-3rsc4zwtpt7fx.riker.replit.dev:3001/register', { name, email, password });
+            const response = await axios.post(process.env.REACT_APP_BACKEND_SERVER+'/register', { name, email, password });
             console.log('Registration response:', response.data.message);
             setSuccess('Registration successful');
             setError('');

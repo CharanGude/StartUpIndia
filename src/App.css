@@ -1,3 +1,7 @@
 main {
   margin:0px;
 }
+body{
+  margin: 0%;
+  border-radius: 0%;
+}
